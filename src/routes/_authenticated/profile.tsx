@@ -71,12 +71,12 @@ function ProfilePage() {
       <Card className="glass border-0">
         <CardHeader><CardTitle>Basic details</CardTitle></CardHeader>
         <CardContent className="grid gap-4 sm:grid-cols-2">
-          <Field label="Full name" v={form.full_name} on={(v) => setForm({ ...form, full_name: v })} />
-          <Field label="Phone" v={form.phone} on={(v) => setForm({ ...form, phone: v })} />
-          <Field label="College" v={form.college} on={(v) => setForm({ ...form, college: v })} />
-          <Field label="Department" v={form.department} on={(v) => setForm({ ...form, department: v })} />
-          <Field label="CGPA" type="number" v={form.cgpa} on={(v) => setForm({ ...form, cgpa: v })} />
-          <Field label="Graduation Year" type="number" v={form.graduation_year} on={(v) => setForm({ ...form, graduation_year: v })} />
+          <Field label="Full name" v={form.full_name} on={(v: string) => setForm({ ...form, full_name: v })} />
+          <Field label="Phone" v={form.phone} on={(v: string) => setForm({ ...form, phone: v })} />
+          <Field label="College" v={form.college} on={(v: string) => setForm({ ...form, college: v })} />
+          <Field label="Department" v={form.department} on={(v: string) => setForm({ ...form, department: v })} />
+          <Field label="CGPA" type="number" v={form.cgpa} on={(v: string) => setForm({ ...form, cgpa: v })} />
+          <Field label="Graduation Year" type="number" v={form.graduation_year} on={(v: string) => setForm({ ...form, graduation_year: v })} />
           <div className="sm:col-span-2 grid gap-2">
             <Label>About you</Label>
             <Textarea rows={3} value={form.bio ?? ""} onChange={(e) => setForm({ ...form, bio: e.target.value })} />

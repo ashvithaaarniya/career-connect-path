@@ -59,13 +59,13 @@ function AiAssistant() {
           </div>
         ) : (
           <div className="space-y-4">
-            {messages.map((m) => (
+            {messages.map((m: any) => (
               <div key={m.id} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm ${
                   m.role === "user" ? "bg-brand-gradient text-white" : "bg-muted text-foreground"
                 }`}>
                   <div className="prose prose-sm max-w-none dark:prose-invert">
-                    {m.parts.map((p, i) =>
+                    {m.parts.map((p: any, i: number) =>
                       p.type === "text" ? <ReactMarkdown key={i}>{p.text}</ReactMarkdown> : null,
                     )}
                   </div>
