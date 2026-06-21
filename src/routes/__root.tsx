@@ -95,6 +95,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "CareerConnect — AI-Powered Placement & Career Portal" },
+      { name: "description", content: "Career Compass Pro is an AI-powered full-stack web portal for students and administrators to manage career placement and job searching." },
+      { property: "og:description", content: "Career Compass Pro is an AI-powered full-stack web portal for students and administrators to manage career placement and job searching." },
+      { name: "twitter:description", content: "Career Compass Pro is an AI-powered full-stack web portal for students and administrators to manage career placement and job searching." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ac82f36f-08dd-4eac-b8cf-aecf3422a941/id-preview-05d01a23--da336560-371e-4d5e-b253-aa4b16c3db6a.lovable.app-1782062159270.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ac82f36f-08dd-4eac-b8cf-aecf3422a941/id-preview-05d01a23--da336560-371e-4d5e-b253-aa4b16c3db6a.lovable.app-1782062159270.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
